@@ -32,14 +32,16 @@ Some entities can have instances independently from others, like a customer enti
 
 Sometimes an entity refers back to itself. For example, think of a work hierarchy: an eployee has a boss and the bosschef is an employee too. The attribute boss of the entity employees refers back to itself.
 
-### Reduntant Relationships
+### Redundant Relationships
 
-Sometimes a relationship can be reduntant between two entities because they relate to each other through another entity. In our case, customers and products refer to each other via sales and therefore a direct representation of that relationship is not necessary.
+Sometimes a relationship can be redundant between two entities because they relate to each other through another entity. In our case, customers and products refer to each other via sales and therefore a direct representation of that relationship is not necessary.
 
-![](../images/03_reduntant_relationships.png)
+![](../images/03_redundant_relationships.png)
 
 ### Many-to-many Relationships
 
 M:N relationships are not directly possible in a database. What a M:N relationship says is that a number of records from one table belong to a number of records in another. Somewhere you need to save which records these are and the solution is to split the relationship up in two 1:N relationships. That can be done by creating a new entity that is between the related entities. In our example there is a M:N relationship between sales and products. This can be solved by creating a new entity called sales_products. In logical models this is called an associative entity and in physical database terms this is called a link table, intersection table or junction table.
 
+![](../images/04_associative_relationships.png)
 
+![](../images/05_link_tables.png)
