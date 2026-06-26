@@ -47,3 +47,9 @@ M:N relationships are not directly possible in a database. What a M:N relationsh
 In the example there are two many-to-many relationships that need to be solved: 'Products <----> Sales', and 'Products <----> Shops'. For both situations there needs to be created a new entity, but what is that entity? For the Products <----> Sales relationship, every sale includes more products. The relationship shows the content of the sale. In other words, it gives details about the sale. So the entity is called 'Sales details'. You could also name it 'sold products'. The Products <----> Shops relationship shows which products are available in which the shops, also known as 'stock'.
 
 ![](../images/05_link_tables.png)
+
+### Attributes
+
+Attributes represent the data we want to save into entities. For example, for customers we might need the name, phone number and address. It's not important what the data will be like and what the specifics are, what is important in this step is what information we really want to save.
+
+![](../images/06_attributes.png)
