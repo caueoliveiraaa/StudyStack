@@ -53,3 +53,10 @@ In the example there are two many-to-many relationships that need to be solved: 
 Attributes represent the data we want to save into entities. For example, for customers we might need the name, phone number and address. It's not important what the data will be like and what the specifics are, what is important in this step is what information we really want to save.
 
 ![](../images/06_attributes.png)
+
+### ERD Representations
+
+The endtities in the diagram are represented by rectangles and their relationships connecting them is represented by a line. The side that is mandatory for the other to exist takes a vertical dash (pipe) and the side that is not mandatory for the other to exist takes a circle. The 'many' side of the relationship is represented by crowfeet, which are three lines forming a shape that resembles the foot of a crow. 
+
+![](../images/07_erd_relationships.png)
+
